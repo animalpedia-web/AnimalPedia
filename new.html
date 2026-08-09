@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mới xuất hiện | AnimalPedia</title>
+
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<body>
+
+    <!-- ================= MENU ================= -->
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="index.html">Trang chủ</a>
+        <a href="red-book.html">Sách đỏ</a>
+        <a href="endangered.html">Nguy cơ tuyệt chủng</a>
+        <a href="extinct.html">Đã tuyệt chủng</a>
+        <a href="feedback.html">Góp ý</a>
+        <a href="info.html">Thông tin</a>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Mới xuất hiện</h1>
+
+            <p>
+                Khám phá những loài động vật mới được phát hiện
+                hoặc được ghi nhận trong thời gian gần đây.
+            </p>
+
+            <button id="exploreButton">
+                Khám phá ngay
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= THỐNG KÊ ================= -->
+
+    <section class="statistics">
+
+        <div class="stat-card">
+
+            <strong id="totalAnimals">
+                0
+            </strong>
+
+            <span>
+                Tổng số loài
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong id="recentAnimals">
+                0
+            </strong>
+
+            <span>
+                Loài mới được ghi nhận
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TÌM KIẾM ================= -->
+
+    <section class="animals-section" id="animalsSection">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Tìm tên động vật..."
+            >
+
+        </div>
+
+
+        <!-- ================= GIỚI THIỆU ================= -->
+
+        <div class="intro-box">
+
+            <h2>
+                Giới thiệu
+            </h2>
+
+            <p>
+                Trang này tổng hợp những loài động vật mới được
+                phát hiện hoặc được ghi nhận trong thời gian gần đây.
+                Đây là những phát hiện góp phần mở rộng hiểu biết
+                của con người về thế giới tự nhiên.
+            </p>
+
+        </div>
+
+
+        <!-- ================= DANH SÁCH ================= -->
+
+        <div
+            id="animalGrid"
+            class="animal-grid">
+        </div>
+
+    </section>
+
+
+    <script src="js/new.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalPedia - Trang chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="search-panel">
+        <button class="search-toggle" id="searchToggle" aria-label="Mở tìm kiếm">🔍</button>
+        <input type="text" id="searchInput" placeholder="Tìm loài động vật..." aria-label="Tìm kiếm loài động vật">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="index.html">Trang chủ</a>
+        <a href="red-book.html">Sách đỏ</a>
+        <a href="endangered.html">Nguy cơ tuyệt chủng</a>
+        <a href="new.html">Mới xuất hiện</a>
+        <a href="extinct.html">Đã tuyệt chủng</a>
+        <a href="feedback.html">Góp ý</a>
+        <a href="info.html">Thông tin</a>
+        <div class="menu-group">
+            <strong>Loài động vật</strong>
+            <a href="invertebrates.html">Động vật không xương sống</a>
+            <a href="mammals.html">Động vật có vú</a>
+            <a href="birds.html">Chim</a>
+            <a href="reptiles.html">Bò sát</a>
+            <a href="fish.html">Cá</a>
+            <a href="insects.html">Côn trùng</a>
+            <a href="amphibians.html">Lưỡng cư</a>   
+            <a href="crustacean.html">Giáp xác</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <p class="eyebrow">AnimalPedia</p>
+            <h1>BÁCH KHOA ĐỘNG VẬT</h1>
+            <p class="hero-text">Khám phá thế giới động vật qua những loài quý hiếm, đáng yêu và đầy bí ẩn.</p>
+        </header>
+
+        <section class="featured-section">
+            <div class="section-header">
+                <h2>Động vật nổi bật</h2>
+            </div>
+
+            <div class="featured-slider" id="featuredSlider">
+                <div class="featured-slides"></div>
+                <button class="slider-button prev" id="sliderPrev" aria-label="Trước">←</button>
+                <button class="slider-button next" id="sliderNext" aria-label="Tiếp">→</button>
+                <div class="animation-indicator" id="featuredIndicator"></div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

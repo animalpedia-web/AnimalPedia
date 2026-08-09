@@ -1,0 +1,872 @@
+/* =================================================
+   RESET
+================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f8fafc;
+
+    color: #0f172a;
+
+    min-height: 100vh;
+}
+
+
+/* =================================================
+   MENU BUTTON
+================================================= */
+
+.menu-toggle {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #0891b2;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 4px;
+
+    box-shadow:
+        0 10px 22px
+        rgba(8, 145, 178, 0.25);
+
+    z-index: 1100;
+
+}
+
+
+.menu-toggle span {
+
+    width: 22px;
+
+    height: 2px;
+
+    background: white;
+
+    border-radius: 999px;
+
+    transition: 0.25s;
+
+}
+
+
+/* =================================================
+   SIDE MENU
+================================================= */
+
+.side-menu {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: 280px;
+
+    height: 100vh;
+
+    padding:
+        80px 20px 25px;
+
+    background: #0f172a;
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform 0.3s ease;
+
+    z-index: 1000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    overflow-y: auto;
+
+}
+
+
+/* MENU MỞ */
+
+.side-menu.active {
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* LINK */
+
+.side-menu a,
+.side-menu strong {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding:
+        9px 10px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+}
+
+
+/* HOVER */
+
+.side-menu a:hover {
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* TRANG HIỆN TẠI */
+
+.side-menu a.current {
+
+    background: #0891b2;
+
+}
+
+
+/* NHÓM */
+
+.menu-group {
+
+    margin-top: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.menu-group strong {
+
+    color: #67e8f9;
+
+    padding-bottom: 5px;
+
+}
+
+
+/* =================================================
+   HERO
+================================================= */
+
+.hero {
+
+    min-height: 350px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #164e63
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        70px 8% 60px;
+
+}
+
+
+.hero-content {
+
+    max-width: 760px;
+
+}
+
+
+.hero-label {
+
+    display: inline-block;
+
+    padding:
+        7px 13px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,0.1);
+
+    color: #67e8f9;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(40px, 7vw, 72px);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    max-width: 650px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #cbd5e1;
+
+}
+
+
+/* =================================================
+   MAIN
+================================================= */
+
+main {
+
+    width: min(
+        1200px,
+        calc(100% - 40px)
+    );
+
+    margin: auto;
+
+}
+
+
+/* =================================================
+   STATISTICS
+================================================= */
+
+.statistics {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: -45px;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+
+
+.stat-box {
+
+    background: white;
+
+    min-width: 240px;
+
+    padding:
+        25px 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(15, 23, 42, 0.12);
+
+    text-align: center;
+
+}
+
+
+.stat-number {
+
+    display: block;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #0891b2;
+
+}
+
+
+.stat-label {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+/* =================================================
+   SEARCH
+================================================= */
+
+.search-section {
+
+    margin-top: 45px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.search-box {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        0 18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(15, 23, 42, 0.05);
+
+}
+
+
+.search-icon {
+
+    margin-right: 12px;
+
+    font-size: 18px;
+
+}
+
+
+.search-box input {
+
+    border: none;
+
+    outline: none;
+
+    width: 100%;
+
+    height: 100%;
+
+    font-size: 16px;
+
+    background: transparent;
+
+    color: #0f172a;
+
+}
+
+
+.search-box input::placeholder {
+
+    color: #94a3b8;
+
+}
+
+
+/* =================================================
+   SEARCH RESULTS
+================================================= */
+
+.search-results {
+
+    max-width: 650px;
+
+    margin: 8px auto 0;
+
+}
+
+
+.search-results.show {
+
+    display: block;
+
+}
+
+
+.search-results ul {
+
+    list-style: none;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px
+        rgba(15, 23, 42, 0.1);
+
+}
+
+
+.search-results li a {
+
+    display: block;
+
+    padding: 13px 16px;
+
+    text-decoration: none;
+
+    color: #0f172a;
+
+}
+
+
+.search-results li a:hover {
+
+    background: #f1f5f9;
+
+}
+
+
+/* =================================================
+   SECTION HEADING
+================================================= */
+
+.section-heading {
+
+    margin-bottom: 25px;
+
+}
+
+
+.section-label {
+
+    color: #0891b2;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size:
+        clamp(26px, 4vw, 38px);
+
+    margin-top: 7px;
+
+}
+
+
+/* =================================================
+   ANIMAL GRID
+================================================= */
+
+.animal-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+/* =================================================
+   ANIMAL CARD
+================================================= */
+
+.animal-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    border:
+        1px solid #e2e8f0;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.animal-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(15, 23, 42, 0.12);
+
+}
+
+
+.animal-card img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #e2e8f0;
+
+}
+
+
+.card-content {
+
+    padding: 17px;
+
+}
+
+
+.card-content h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.scientific-name {
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    color: #64748b;
+
+    margin-bottom: 8px;
+
+}
+
+
+.animal-type {
+
+    font-size: 13px;
+
+    color: #475569;
+
+    margin-bottom: 13px;
+
+}
+
+
+/* =================================================
+   STATUS
+================================================= */
+
+.status {
+
+    display: inline-block;
+
+    padding:
+        6px 9px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+}
+
+
+/* =================================================
+   EMPTY / LOADING
+================================================= */
+
+.loading,
+.empty {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #64748b;
+
+}
+
+
+/* =================================================
+   FOOTER
+================================================= */
+
+footer {
+
+    margin-top: 80px;
+
+    background: #0f172a;
+
+    color: white;
+
+    padding:
+        45px 20px;
+
+}
+
+
+.footer-content {
+
+    width: min(
+        1200px,
+        calc(100% - 40px)
+    );
+
+    margin: auto;
+
+}
+
+
+.footer-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.footer-content p {
+
+    color: #94a3b8;
+
+    line-height: 1.6;
+
+}
+
+
+.copyright {
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+}
+
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 1000px) {
+
+    .animal-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+
+        min-height: 310px;
+
+        padding:
+            70px 25px 50px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 43px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 15px;
+
+    }
+
+
+    main {
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+
+    .animal-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 14px;
+
+    }
+
+
+    .animal-card img {
+
+        height: 160px;
+
+    }
+
+
+    .card-content {
+
+        padding: 13px;
+
+    }
+
+
+    .card-content h3 {
+
+        font-size: 16px;
+
+    }
+    .scientific-name,
+    .animal-type {
+
+        font-size: 11px;
+
+    }
+
+
+    .side-menu {
+
+        width: 280px;
+
+    }
+
+}
+
+
+/* =================================================
+   MOBILE NHỎ
+================================================= */
+
+@media (max-width: 480px) {
+
+    .animal-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .animal-card img {
+
+        height: 220px;
+
+    }
+
+
+    .stat-box {
+
+        width: 100%;
+
+    }
+
+
+    .statistics {
+
+        margin-left: 10px;
+
+        margin-right: 10px;
+
+    }
+
+}

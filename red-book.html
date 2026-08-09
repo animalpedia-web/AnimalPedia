@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sách đỏ Việt Nam | AnimalPedia</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/red-book.css">
+
+</head>
+
+<body>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="side-menu" id="sideMenu">
+
+    <a href="index.html">Trang chủ</a>
+
+
+    <a href="endangered.html">
+        Nguy cơ tuyệt chủng
+    </a>
+
+    <a href="new.html">
+        Mới xuất hiện
+    </a>
+
+    <a href="extinct.html">
+        Đã tuyệt chủng
+    </a>
+
+    <a href="info.html">
+        Thông tin
+    </a>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Sách đỏ Việt Nam</h1>
+
+<p>
+
+Tổng hợp các loài động vật quý hiếm tại Việt Nam đang được bảo tồn theo
+Sách đỏ Việt Nam và các chương trình bảo tồn thiên nhiên.
+
+</p>
+
+<a href="#animalGrid" class="hero-button">
+
+Khám phá ngay
+
+</a>
+
+</div>
+
+</header>
+
+<section class="overview">
+
+<div class="overview-card">
+
+<h2 id="totalAnimals">0</h2>
+
+<p>Tổng số loài</p>
+
+</div>
+
+<div class="overview-card">
+
+<h2 id="crCount">0</h2>
+
+<p>Cực kỳ nguy cấp</p>
+
+</div>
+
+<div class="overview-card">
+
+<h2 id="enCount">0</h2>
+
+<p>Nguy cấp</p>
+
+</div>
+
+<div class="overview-card">
+
+<h2 id="vuCount">99</h2>
+
+<p>Sẽ nguy cấp</p>
+
+</div>
+
+</section>
+
+<section class="search-area">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Tìm tên động vật..."
+>
+
+</section>
+
+<section class="filter">
+
+<button class="filter-btn active" data-filter="all">
+
+Tất cả
+
+</button>
+
+<button class="filter-btn" data-filter="CR">
+
+CR
+
+</button>
+
+<button class="filter-btn" data-filter="EN">
+
+EN
+
+</button>
+
+<button class="filter-btn" data-filter="VU">
+
+VU
+
+</button>
+
+</section>
+
+<section class="introduction">
+
+<h2>
+
+Giới thiệu
+
+</h2>
+
+<p>
+
+Sách đỏ Việt Nam là tài liệu khoa học ghi nhận các loài động vật có nguy cơ
+đe dọa tuyệt chủng trong tự nhiên. Trang này giúp bạn dễ dàng tra cứu thông
+tin, phân loại theo mức độ nguy cấp và tìm hiểu về các loài quý hiếm của
+Việt Nam.
+
+</p>
+
+</section>
+
+<section id="animalGrid" class="animal-grid">
+
+</section>
+
+<div class="loading" id="loading">
+
+Đang tải dữ liệu...
+
+</div>
+
+<footer class="footer">
+
+<p>
+
+AnimalPedia • Bảo tồn thiên nhiên Việt Nam
+
+</p>
+
+</footer>
+
+
+<script src="js/red-book.js"></script>
+<script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

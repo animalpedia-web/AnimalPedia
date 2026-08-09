@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thông tin | AnimalPedia</title>
+
+    <link rel="stylesheet" href="css/info.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NÚT MENU
+    ========================== -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Mở menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- =========================
+         THANH MENU
+    ========================== -->
+
+    <nav class="side-menu" id="sideMenu">
+
+        <a href="index.html">Trang chủ</a>
+
+        <a href="red-book.html">Sách đỏ</a>
+
+        <a href="endangered.html">
+            Nguy cơ tuyệt chủng
+        </a>
+
+        <a href="new.html">
+            Mới xuất hiện
+        </a>
+
+        <a href="extinct.html">
+            Đã tuyệt chủng
+        </a>
+
+        <a href="feedback.html">
+            Góp ý
+        </a>
+
+        <a href="info.html" class="current">
+            Thông tin
+        </a>
+
+
+        <div class="menu-group">
+
+            <strong>Loài động vật</strong>
+
+            <a href="invertebrates.html">
+                Động vật không xương sống
+            </a>
+
+            <a href="mammals.html">
+                Động vật có vú
+            </a>
+
+            <a href="birds.html">
+                Chim
+            </a>
+
+            <a href="reptiles.html">
+                Bò sát
+            </a>
+
+            <a href="fish.html">
+                Cá
+            </a>
+
+            <a href="insects.html">
+                Côn trùng
+            </a>
+
+            <a href="amphibians.html">
+                Lưỡng cư
+            </a>
+
+            <a href="crustacean.html">
+                Giáp xác
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         OVERLAY
+    ========================== -->
+
+    <div
+        class="menu-overlay"
+        id="menuOverlay"
+    ></div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <header class="info-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-icon">
+                🐾
+            </div>
+
+            <h1>Về AnimalPedia</h1>
+
+            <p>
+                Khám phá thế giới động vật,
+                tìm hiểu về sự đa dạng sinh học
+                và nâng cao ý thức bảo vệ thiên nhiên.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="info-container">
+
+
+        <!-- GIỚI THIỆU -->
+
+        <section class="info-card">
+
+            <div class="section-icon">
+                🌎
+            </div>
+
+            <div class="section-content">
+                <h2>AnimalPedia là gì?</h2>
+
+                <p>
+                    <strong>AnimalPedia</strong> là một website
+                    tổng hợp kiến thức về các loài động vật
+                    trên thế giới.
+                </p>
+
+                <p>
+                    Website được xây dựng nhằm giúp mọi người
+                    dễ dàng tìm hiểu về đặc điểm, môi trường sống,
+                    thức ăn, phân bố và tình trạng bảo tồn
+                    của nhiều loài động vật khác nhau.
+                </p>
+
+                <p>
+                    Chúng tôi hướng tới việc xây dựng một
+                    kho thông tin động vật trực quan, dễ sử dụng
+                    và phù hợp với những người yêu thiên nhiên
+                    cũng như học sinh, sinh viên.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MỤC ĐÍCH -->
+
+        <section class="info-card">
+
+            <div class="section-icon">
+                🎯
+            </div>
+
+            <div class="section-content">
+
+                <h2>Mục đích của website</h2>
+
+                <div class="purpose-grid">
+
+                    <div class="purpose-item">
+
+                        <span>📚</span>
+
+                        <div>
+                            <h3>Cung cấp kiến thức</h3>
+
+                            <p>
+                                Tổng hợp thông tin cơ bản
+                                về nhiều loài động vật.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="purpose-item">
+
+                        <span>🔎</span>
+
+                        <div>
+                            <h3>Dễ dàng tìm kiếm</h3>
+
+                            <p>
+                                Giúp người dùng nhanh chóng
+                                tìm được loài động vật mình quan tâm.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="purpose-item">
+
+                        <span>🌱</span>
+
+                        <div>
+                            <h3>Nâng cao nhận thức</h3>
+
+                            <p>
+                                Giúp mọi người hiểu hơn về
+                                đa dạng sinh học và bảo tồn.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="purpose-item">
+
+                        <span>🐼</span>
+
+                        <div>
+                            <h3>Bảo vệ động vật</h3>
+
+                            <p>
+                                Khuyến khích ý thức bảo vệ
+                                các loài động vật và môi trường sống.
+                                </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TÌNH TRẠNG BẢO TỒN -->
+
+        <section class="info-card">
+
+            <div class="section-icon">
+                🛡️
+            </div>
+
+            <div class="section-content">
+
+                <h2>
+                    Phân loại tình trạng bảo tồn
+                </h2>
+
+                <p>
+                    AnimalPedia sử dụng các mã tình trạng
+                    bảo tồn để giúp người dùng dễ dàng nhận biết
+                    mức độ nguy cấp của từng loài.
+                </p>
+
+
+                <div class="status-list">
+
+                    <div class="status-row">
+
+                        <span class="status-badge cr">
+                            CR
+                        </span>
+
+                        <div>
+                            <strong>Cực kỳ nguy cấp</strong>
+
+                            <p>
+                                Loài đang đối mặt với nguy cơ
+                                tuyệt chủng cực kỳ cao trong tự nhiên.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge en">
+                            EN
+                        </span>
+
+                        <div>
+                            <strong>Nguy cấp</strong>
+
+                            <p>
+                                Loài đang đối mặt với nguy cơ
+                                tuyệt chủng rất cao.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge vu">
+                            VU
+                        </span>
+
+                        <div>
+                            <strong>Sắp nguy cấp</strong>
+
+                            <p>
+                                Loài có nguy cơ trở thành
+                                loài nguy cấp trong tương lai.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge nt">
+                            NT
+                        </span>
+
+                        <div>
+                            <strong>Sắp bị đe dọa</strong>
+
+                            <p>
+                                Loài hiện chưa thuộc nhóm
+                                bị đe dọa nhưng có khả năng
+                                tiến tới nhóm này.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+                        <span class="status-badge lc">
+                            LC
+                        </span>
+
+                        <div>
+                            <strong>Ít quan tâm</strong>
+
+                            <p>
+                                Loài hiện chưa đối mặt
+                                với nguy cơ đáng kể.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge dd">
+                            DD
+                        </span>
+
+                        <div>
+                            <strong>Thiếu dữ liệu</strong>
+
+                            <p>
+                                Chưa có đủ thông tin để
+                                đánh giá tình trạng bảo tồn.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge ex">
+                            EX
+                        </span>
+
+                        <div>
+                            <strong>Đã tuyệt chủng</strong>
+
+                            <p>
+                                Không còn cá thể nào của loài
+                                được biết là tồn tại.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span class="status-badge ne">
+                            NE
+                        </span>
+                        <div>                            <strong>Chưa được đánh giá</strong>
+
+                            <p>
+                                Chưa được đánh giá tình trạng
+                                bảo tồn.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DỮ LIỆU -->
+
+        <section class="info-card">
+
+            <div class="section-icon">
+                📊
+            </div>
+
+            <div class="section-content">
+
+                <h2>Về dữ liệu</h2>
+
+                <p>
+                    Thông tin trên AnimalPedia được tổng hợp
+                    từ nhiều nguồn tài liệu và nguồn thông tin
+                    khoa học khác nhau.
+                </p>
+
+                <p>
+                    Tình trạng bảo tồn của các loài được trình bày
+                    theo hệ thống phân loại của
+                    <strong>IUCN Red List</strong> khi dữ liệu
+                    tương ứng có sẵn.
+                </p>
+
+                <div class="notice">
+
+                    <strong>⚠️ Lưu ý</strong>
+
+                    <p>
+                        Thông tin trên website phục vụ mục đích
+                        tham khảo và giáo dục. Một số thông tin
+                        có thể được cập nhật khi các nghiên cứu
+                        khoa học mới được công bố.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BẢN QUYỀN -->
+
+        <section class="info-card">
+
+            <div class="section-icon">
+                💻
+            </div>
+
+            <div class="section-content">
+
+                <h2>Về dự án</h2>
+
+                <p>
+                    AnimalPedia là một dự án website được xây dựng
+                    với mục tiêu kết hợp công nghệ và kiến thức
+                    về thế giới động vật.
+                </p>
+
+                <p>
+                    Giao diện được thiết kế hướng tới sự đơn giản,
+                    dễ sử dụng trên cả máy tính và thiết bị di động.
+                </p>
+
+                <div class="project-box">
+
+                    <div>
+                        <span class="project-label">
+                            Dự án
+                        </span>
+
+                        <strong>
+                            AnimalPedia
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span class="project-label">
+                            Chủ đề
+                        </span>
+
+                        <strong>
+                            Động vật & Đa dạng sinh học
+                        </strong>
+                    </div>
+                    <div>
+                        <span class="project-label">
+                            Ngôn ngữ
+                        </span>
+
+                        <strong>
+                            Tiếng Việt
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GÓP Ý -->
+
+        <section class="contact-card">
+
+            <div>
+
+                <span class="contact-icon">
+                    💬
+                </span>
+
+                <h2>
+                    Bạn phát hiện điều gì chưa chính xác?
+                </h2>
+
+                <p>
+                    Hãy gửi góp ý để chúng tôi có thể
+                    cải thiện AnimalPedia.
+                </p>
+
+            </div>
+
+            <a
+                href="feedback.html"
+                class="feedback-button"
+            >
+                Gửi góp ý
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>
+            © <span id="currentYear"></span>
+            AnimalPedia.
+            Tìm hiểu để cùng bảo vệ thế giới tự nhiên.
+        </p>
+
+    </footer>
+
+
+    <script src="js/info.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalPedia - Cá</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #eef6f3, #f8fbff); color: #09303d; }
+        .category-page { max-width: 1000px; margin: 40px auto; padding: 24px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #0f766e; text-decoration: none; font-weight: 600; }
+        .hero { background: white; padding: 28px; border-radius: 24px; box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08); }
+        .hero h1 { margin: 0 0 8px; color: #0f766e; font-size: 2rem; }
+        .animal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+        .animal-card { display: block; background: white; padding: 18px; border-radius: 18px; text-decoration: none; color: #09303d; box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06); transition: transform 0.2s ease; }
+        .animal-card:hover { transform: translateY(-3px); }
+        .animal-card h3 { margin: 0 0 8px; color: #0e5043; }
+        .animal-card p { margin: 0; color: #475569; }
+    </style>
+</head>
+<body>
+    <main class="category-page">
+        <a class="back-link" href="index.html">← Quay về trang chủ</a>
+        <section class="hero">
+            <h1>Cá</h1>
+        </section>
+        <section class="animal-grid" id="animalGrid"></section>
+    </main>
+    <script src="js/category-page.js"></script>
+</body>
+</html>

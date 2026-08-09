@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Góp ý - AnimalPedia</title>
+
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NÚT MENU
+    ========================== -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Mở menu"
+        type="button"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- =========================
+         THANH MENU
+    ========================== -->
+
+    <nav class="side-menu" id="sideMenu">
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="red-book.html">
+            Sách đỏ
+        </a>
+
+        <a href="endangered.html">
+            Nguy cơ tuyệt chủng
+        </a>
+
+        <a href="new.html">
+            Mới xuất hiện
+        </a>
+
+        <a href="extinct.html">
+            Đã tuyệt chủng
+        </a>
+
+        <a href="feedback.html" class="active">
+            Góp ý
+        </a>
+
+        <a href="info.html">
+            Thông tin
+        </a>
+
+
+        <div class="menu-group">
+
+            <strong>
+                Loài động vật
+            </strong>
+
+            <a href="invertebrates.html">
+                Động vật không xương sống
+            </a>
+
+            <a href="mammals.html">
+                Động vật có vú
+            </a>
+
+            <a href="birds.html">
+                Chim
+            </a>
+
+            <a href="reptiles.html">
+                Bò sát
+            </a>
+
+            <a href="fish.html">
+                Cá
+            </a>
+
+            <a href="insects.html">
+                Côn trùng
+            </a>
+
+            <a href="amphibians.html">
+                Lưỡng cư
+            </a>
+
+            <a href="crustacean.html">
+                Giáp xác
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         NỘI DUNG
+    ========================== -->
+
+    <main class="feedback-page">
+
+        <section class="feedback-container">
+
+            <div class="feedback-header">
+
+                <span class="feedback-icon">
+                    💬
+                </span>
+
+                <h1>
+                    Góp ý cho AnimalPedia
+                </h1>
+
+                <p>
+                    Ý kiến của bạn giúp AnimalPedia
+                    ngày càng hoàn thiện hơn.
+                </p>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form id="feedbackForm">
+
+
+                <!-- TÊN -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Tên của bạn
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Nhập tên của bạn"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                        <span>(không bắt buộc)</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                    >
+
+                </div>
+
+
+                <!-- LOẠI GÓP Ý -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Loại góp ý
+                    </label>
+
+                    <select
+                        id="category"
+                        name="category"
+                        required
+                    >
+
+                        <option value="">
+                            -- Chọn loại góp ý --
+                        </option>
+
+                        <option value="data">
+                            Thông tin động vật
+                        </option>
+
+                        <option value="error">
+                            Báo lỗi
+                        </option>
+
+                        <option value="suggestion">
+                            Đề xuất tính năng
+                        </option>
+
+                        <option value="design">
+                            Giao diện
+                        </option>
+
+                        <option value="other">
+                            Khác
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- NỘI DUNG -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Nội dung góp ý
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Hãy cho chúng tôi biết ý kiến của bạn..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- NÚT GỬI -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Gửi góp ý
+                </button>
+
+
+                <!-- THÔNG BÁO -->
+
+                <div
+                    id="feedbackMessage"
+                    class="feedback-message"
+                ></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/feedback.js"></script>
+
+</body>
+</html>

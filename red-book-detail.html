@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimalPedia - Sách đỏ Việt Nam</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/red-book.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="side-menu" id="sideMenu">
+
+        <a href="index.html">Trang chủ</a>
+        <a href="red-book.html">Sách đỏ Việt Nam</a>
+        <a href="endangered.html">Nguy cơ tuyệt chủng</a>
+        <a href="new.html">Mới xuất hiện</a>
+        <a href="extinct.html">Đã tuyệt chủng</a>
+        <a href="feedback.html">Góp ý</a>
+        <a href="info.html">Thông tin</a>
+
+        <div class="menu-group">
+
+            <strong>Loài động vật</strong>
+
+            <a href="mammals.html">Động vật có vú</a>
+            <a href="birds.html">Chim</a>
+            <a href="reptiles.html">Bò sát</a>
+            <a href="fish.html">Cá</a>
+            <a href="insects.html">Côn trùng</a>
+            <a href="amphibians.html">Lưỡng cư</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- NỘI DUNG -->
+
+    <main class="red-detail">
+
+        <a href="red-book.html" class="red-back">
+            ← Quay lại Sách đỏ Việt Nam
+        </a>
+
+
+        <section class="red-detail-hero">
+
+            <div class="red-detail-image">
+
+                <img id="animalImage" src="" alt="">
+
+            </div>
+
+
+            <div class="red-detail-info">
+
+                <p class="red-label">
+                    SÁCH ĐỎ VIỆT NAM
+                </p>
+
+                <h1 id="animalName">
+                    Đang tải...
+                </h1>
+
+                <p id="animalScientificName" class="scientific-name"></p>
+
+                <div id="redStatus" class="red-status">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- THÔNG TIN BẢO TỒN -->
+
+        <section class="red-section">
+
+            <h2>Tình trạng bảo tồn</h2>
+
+            <div class="red-status-box">
+
+                <div>
+                    <span>Phân hạng Việt Nam</span>
+                    <strong id="redBookCode"></strong>
+                </div>
+
+                <div>
+                    <span>Tình trạng</span>
+                    <strong id="redBookName"></strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- THÔNG TIN CƠ BẢN -->
+
+        <section class="red-section">
+
+            <h2>Thông tin cơ bản</h2>
+
+            <div class="red-facts">
+
+                <div>
+                    <span>Nhóm</span>
+                    <strong id="animalType"></strong>
+                </div>
+
+                <div>
+                    <span>Cân nặng</span>
+                    <strong id="animalWeight"></strong>
+                    </div>
+
+                <div>
+                    <span>Chiều dài</span>
+                    <strong id="animalLength"></strong>
+                </div>
+
+                <div>
+                    <span>Tuổi thọ</span>
+                    <strong id="animalLifespan"></strong>
+                </div>
+
+                <div>
+                    <span>Thức ăn</span>
+                    <strong id="animalDiet"></strong>
+                </div>
+
+                <div>
+                    <span>Phân bố</span>
+                    <strong id="animalDistribution"></strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GIỚI THIỆU -->
+
+        <section class="red-section">
+
+            <h2>Giới thiệu</h2>
+
+            <p id="animalIntro"></p>
+
+        </section>
+
+
+
+        <!-- MÔI TRƯỜNG SỐNG -->
+
+        <section class="red-section">
+
+            <h2>Môi trường sống</h2>
+
+            <p id="animalHabitat"></p>
+
+        </section>
+
+
+
+        <!-- CHẾ ĐỘ ĂN -->
+
+        <section class="red-section">
+
+            <h2>Chế độ ăn</h2>
+
+            <p id="animalFeeding"></p>
+
+        </section>
+
+
+
+        <!-- PHÂN BỐ -->
+
+        <section class="red-section">
+
+            <h2>Phân bố</h2>
+
+            <p id="animalDistributionDetail"></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/red-book-detail.js"></script>
+
+</body>
+
+</html>

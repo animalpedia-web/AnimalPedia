@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nguy cơ tuyệt chủng | AnimalPedia</title>
+
+    <link rel="stylesheet" href="css/endangered.css">
+</head>
+
+<body>
+    <!-- Nút mở menu -->
+<button class="menu-toggle" id="menuButton">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</button>
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<aside class="side-menu" id="sideMenu">
+
+    <nav>
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="red-book.html">
+            Sách đỏ
+        </a>
+
+        <a href="new.html">
+            Mới xuất hiện
+        </a>
+
+        <a href="extinct.html">
+            Đã tuyệt chủng
+        </a>
+
+        <a href="feedback.html">
+            Góp ý
+        </a>
+
+        <a href="info.html">
+            Thông tin
+        </a>
+
+    </nav>
+
+</aside>
+
+    <!-- NỀN TỐI KHI MỞ MENU -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="index.html">Trang chủ</a>
+        <a href="red-book.html">Sách đỏ</a>
+        <a href="new.html">Mới xuất hiện</a>
+        <a href="extinct.html">Đã tuyệt chủng</a>
+        <a href="feedback.html">Góp ý</a>
+        <a href="info.html">Thông tin</a>
+    </nav>
+
+    </aside>
+
+
+    <!-- NỘI DUNG CHÍNH -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Nguy cơ tuyệt trủng</h1>
+
+                <p>
+                    Tổng hợp các loài động vật đang được đánh giá
+                    về tình trạng bảo tồn trên toàn thế giới.
+                </p>
+
+                <button id="exploreButton">
+                    Khám phá ngay
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- THỐNG KÊ -->
+        <section class="statistics">
+
+            <div class="stat-card">
+                <strong id="totalAnimals">0</strong>
+                <span>Tổng số loài</span>
+            </div>
+
+            <div class="stat-card">
+                <strong id="crCount">0</strong>
+                <span>Cực kỳ nguy cấp</span>
+            </div>
+
+            <div class="stat-card">
+                <strong id="enCount">0</strong>
+                <span>Nguy cấp</span>
+            </div>
+
+            <div class="stat-card">
+                <strong id="vuCount">0</strong>
+                <span>Sắp nguy cấp</span>
+            </div>
+
+        </section>
+
+
+        <!-- TÌM KIẾM + BỘ LỌC -->
+        <section class="filter-section">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Tìm tên động vật..."
+            >
+
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    Tất cả
+                </button>
+
+                <button class="filter-btn" data-filter="CR">
+                    CR
+                </button>
+
+                <button class="filter-btn" data-filter="EN">
+                    EN
+                </button>
+
+                <button class="filter-btn" data-filter="VU">
+                    VU
+                </button>
+
+                <button class="filter-btn" data-filter="NT">
+                    NT
+                </button>
+
+                <button class="filter-btn" data-filter="LC">
+                    LC
+                </button>
+
+                <button class="filter-btn" data-filter="DD">
+                    DD
+                </button>
+
+                <button class="filter-btn" data-filter="EW">
+                    EW
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GIỚI THIỆU -->
+        <section class="introduction">
+
+            <h2>Giới thiệu</h2>
+
+            <p>
+                Trang này tổng hợp thông tin về tình trạng
+                bảo tồn của các loài động vật trên phạm vi toàn thế giới.
+                Các loài được phân loại theo các nhóm tình trạng bảo tồn
+                tương ứng.
+            </p>
+
+        </section>
+
+
+        <!-- DANH SÁCH ĐỘNG VẬT -->
+        <section class="animals-section">
+
+            <div id="animalGrid" class="animal-grid"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/endangered.js"></script>
+
+</body>
+
+</html>

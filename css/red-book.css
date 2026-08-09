@@ -1,0 +1,830 @@
+/* ===========================
+   RED BOOK VIETNAM
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f8e3e3;
+
+    color:#1d2939;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+/*=============================
+HERO
+==============================*/
+
+.hero{
+
+    width:100%;
+
+    height:520px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+    url("../images/banner-redbook.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+
+.hero-button{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:2px solid white;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.hero-button:hover{
+
+    background:white;
+
+    color:#14532d;
+
+}
+
+/*=============================
+THỐNG KÊ
+==============================*/
+
+.overview{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    margin-top:-70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.overview-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.overview-card h2{
+
+    font-size:48px;
+
+    color:#166534;
+
+}
+
+.overview-card p{
+
+    margin-top:12px;
+
+    color:#64748b;
+
+}
+
+/*=============================
+SEARCH
+==============================*/
+
+.search-area{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:60px auto 25px;
+
+}
+
+.search-area input{
+
+    width:100%;
+
+    padding:18px 24px;
+
+    border-radius:50px;
+
+    border:none;
+
+    outline:none;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+}
+
+/*=============================
+FILTER
+==============================*/
+
+.filter{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter-btn{
+
+    border:none;
+
+    background:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.filter-btn:hover{
+
+    background:#166534;
+
+    color:white;
+
+}
+
+.filter-btn.active{
+
+    background:#166534;
+
+    color:white;
+
+}
+
+/*=============================
+GIỚI THIỆU
+==============================*/
+
+.introduction{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:70px auto;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:22px;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+}
+
+.introduction h2{
+
+    color:#14532d;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.introduction p{
+
+    line-height:1.9;
+
+    color:#475569;
+
+}
+
+/*=============================
+GRID
+==============================*/
+
+.animal-grid{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+
+    gap:30px;
+
+    padding-bottom:80px;
+
+}
+
+/*=============================
+CARD
+==============================*/
+
+.animal-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    text-decoration:none;
+
+    color:#1d2939;
+
+}
+
+.animal-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.animal-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    margin-bottom:10px;
+
+    color:#14532d;
+
+}
+
+.card-content p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.status.cr{
+
+    background:#c62828;
+
+    color:white;
+
+}
+
+.status.en{
+
+    background:#ef6c00;
+
+    color:white;
+
+}
+
+.status.vu{
+
+    background:#f9a825;
+
+    color:white;
+
+}
+
+/*=============================
+FOOTER
+==============================*/
+
+.footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/*=============================
+LOADING
+==============================*/
+
+.loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    color:#64748b;
+
+}
+
+/*=============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+.hero{
+
+height:430px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.overview{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+height:360px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.overview{
+
+grid-template-columns:1fr;
+
+}
+
+.introduction{
+
+padding:25px;
+
+}
+
+}
+/* =========================
+   TRANG CHI TIẾT SÁCH ĐỎ
+========================= */
+
+.red-detail {
+
+    max-width: 1050px;
+
+    margin: 90px auto 50px;
+
+    padding: 0 24px;
+
+}
+
+
+.red-back {
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #0f766e;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+
+.red-detail-hero {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 30px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.08);
+
+}
+
+
+.red-detail-image img {
+
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    display: block;
+
+}
+
+
+.red-detail-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.red-label {
+
+    color: #b91c1c;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.red-detail-info h1 {
+
+    margin: 8px 0;
+
+    font-size: 3rem;
+
+    color: #0f766e;
+
+}
+
+
+.scientific-name {
+
+    font-style: italic;
+
+    color: #64748b;
+
+    font-size: 1.1rem;
+
+}
+
+
+.red-status {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    font-weight: 700;
+
+}
+
+
+.red-section {
+
+    margin-top: 25px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.06);
+
+}
+
+
+.red-section h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #0f766e;
+
+}
+
+
+.red-section p {
+
+    color: #334155;
+
+    line-height: 1.8;
+
+}
+
+
+.red-status-box {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+}
+
+
+.red-status-box div {
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #fff7f7;
+
+    border: 1px solid #fecaca;
+
+}
+
+
+.red-status-box span {
+
+    display: block;
+
+    color: #64748b;
+
+    margin-bottom: 8px;
+
+}
+
+
+.red-status-box strong {
+
+    color: #991b1b;
+
+    font-size: 1.2rem;
+
+}
+
+
+.red-facts {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.red-facts div {
+
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+
+}
+
+
+.red-facts span {
+
+    display: block;
+
+    color: #64748b;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 6px;
+
+}
+
+
+.red-facts strong {
+
+    color: #0f475b;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .red-detail {
+
+        margin-top: 70px;
+
+        padding: 0 15px;
+
+    }
+
+
+    .red-detail-hero {
+
+        grid-template-columns: 1fr;
+
+        padding: 18px;
+
+    }
+
+
+    .red-detail-image img {
+
+        height: 280px;
+
+    }
+
+
+    .red-detail-info h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .red-status-box {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .red-facts {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}

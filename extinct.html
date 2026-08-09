@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Đã tuyệt chủng - AnimalPedia</title>
+
+    <link
+        rel="stylesheet"
+        href="css/extinct.css"
+    >
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         NÚT MENU
+    ========================================== -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Mở menu"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <!-- =========================================
+         THANH MENU
+    ========================================== -->
+
+    <nav
+        class="side-menu"
+        id="sideMenu"
+    >
+
+        <a href="index.html">
+            Trang chủ
+        </a>
+
+        <a href="red-book.html">
+            Sách đỏ
+        </a>
+
+        <a href="endangered.html">
+            Nguy cơ tuyệt chủng
+        </a>
+
+        <a href="new.html">
+            Mới xuất hiện
+        </a>
+
+        <a href="feedback.html">
+            Góp ý
+        </a>
+
+        <a href="info.html">
+            Thông tin
+        </a>
+
+    </nav>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                🦴 LƯU TRỮ BẢO TỒN
+            </span>
+
+            <h1>
+                Đã tuyệt chủng
+            </h1>
+
+            <p>
+                Những loài động vật đã biến mất
+                hoàn toàn khỏi tự nhiên và không
+                còn tồn tại trên Trái Đất.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+
+        <!-- =====================================THỐNG KÊ
+        ====================================== -->
+
+        <section class="statistics">
+
+            <div class="stat-box">
+
+                <span class="stat-number"
+                      id="totalAnimals">
+                    0
+                </span>
+
+                <span class="stat-label">
+                    Loài đã tuyệt chủng
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             TÌM KIẾM
+        ====================================== -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Tìm loài đã tuyệt chủng..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <div
+                class="search-results"
+                id="searchResults"
+            ></div>
+
+        </section>
+
+
+        <!-- =====================================
+             DANH SÁCH
+        ====================================== -->
+
+        <section class="animals-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        DANH SÁCH
+                    </span>
+
+                    <h2>
+                        Những loài đã tuyệt chủng
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="animal-grid"
+                id="animalGrid"
+            >
+
+                <div class="loading">
+                    Đang tải dữ liệu...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                AnimalPedia
+            </h3>
+
+            <p>
+                Bách khoa toàn thư về thế giới
+                động vật.
+            </p>
+
+            <p class="copyright">
+                © 2026 AnimalPedia
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/extinct.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f8eeee;
+
+    color: #333;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NÚT MENU
+========================= */
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #0891b2;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    box-shadow: 0 10px 22px rgba(8, 145, 178, 0.25);
+
+    z-index: 1101;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    background: white;
+
+    border-radius: 999px;
+}
+
+
+/* =========================
+   THANH MENU
+========================= */
+
+.side-menu {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    padding: 85px 20px 30px;
+
+    background: #0f172a;
+
+    transform: translateX(100%);
+
+    transition: transform 0.3s ease;
+
+    z-index: 1100;
+
+    /* QUAN TRỌNG */
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    overflow-y: auto;
+}
+
+
+/* Khi mở */
+
+.side-menu.active {
+    transform: translateX(0);
+}
+
+
+/* =========================
+   LINK TRONG MENU
+========================= */
+
+.side-menu a {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    white-space: normal;
+}
+
+
+/* Hover */
+
+.side-menu a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================
+   TIÊU ĐỀ NHÓM
+========================= */
+
+.menu-group {
+    width: 100%;
+
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.menu-group strong {
+    display: block;
+
+    color: #67e8f9;
+
+    padding: 10px 14px;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   LINK TRONG NHÓM
+========================= */
+
+.menu-group a {
+    display: block;
+
+    width: 100%;
+
+    padding: 9px 14px;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   NỘI DUNG
+========================= */
+
+main {
+    margin-right: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 420px;
+
+    background:
+        linear-gradient(
+            rgba(18, 30, 31, 0.55),
+            rgba(18, 30, 31, 0.55)
+        ),
+        linear-gradient(
+            135deg,
+            #65cfc4,
+            #8bd9d1
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 30px;
+}
+
+
+.hero-content {
+    max-width: 760px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+
+    color: #b64949;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+}
+
+
+.hero p {
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+.hero button {
+    padding: 12px 34px;
+
+    border: 2px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.hero button:hover {
+    background: white;
+
+    color: #176e60;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.statistics {
+    max-width: 1000px;
+
+    margin: -55px auto 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+        gap: 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.stat-card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.stat-card strong {
+    display: block;
+
+    font-size: 38px;
+
+    color: #167a5f;
+
+    margin-bottom: 8px;
+}
+
+
+.stat-card span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+.filter-section {
+    max-width: 900px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+
+#searchInput {
+    width: 100%;
+
+    padding: 15px 22px;
+
+    border: none;
+
+    outline: none;
+
+    background: white;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 18px;
+}
+
+
+.filter-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.filter-btn {
+    border: none;
+
+    background: white;
+
+    padding: 9px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.filter-btn.active {
+    background: #16865e;
+
+    color: white;
+}
+
+
+/* =========================
+   GIỚI THIỆU
+========================= */
+
+.introduction {
+    max-width: 900px;
+
+    margin: 0 auto 45px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.introduction h2 {
+    font-size: 28px;
+
+    color: #176c58;
+
+    margin-bottom: 18px;
+}
+
+
+.introduction p {
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   ANIMAL GRID
+========================= */
+
+.animals-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding-bottom: 60px;
+}
+
+
+.animal-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+.animal-card {
+    display: block;
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.25s;
+}
+
+
+.animal-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.animal-card img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.card-content {
+    padding: 18px;
+}
+
+
+.card-content h3 {
+    font-size: 21px;
+
+    margin-bottom: 7px;
+
+    color: #176c58;
+}
+
+
+.scientific-name {
+    font-style: italic;
+
+    color: #777;
+
+    margin-bottom: 8px;
+}
+
+
+.animal-type {
+    color: #555;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.status.cr {
+    background: #f5cccc;
+
+    color: #a30000;
+}
+.status.en {
+    background: #ffe0bd;
+
+    color: #b45b00;
+}
+
+
+.status.vu {
+    background: #fff1a8;
+
+    color: #8a7200;
+}
+
+
+.status.nt {
+    background: #d8efbd;
+
+    color: #4f7c24;
+}
+
+
+.status.lc {
+    background: #c7ebd2;
+
+    color: #277343;
+}
+
+
+.status.dd {
+    background: #ddd;
+
+    color: #555;
+}
+
+
+.status.ew {
+    background: #d8c5e8;
+
+    color: #67448a;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .side-menu {
+        width: 210px;
+    }
+
+    .side-menu.closed {
+        transform: translateX(210px);
+    }
+
+    main {
+        margin-right: 0;
+    }
+
+    .statistics {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .animal-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        padding: 0 20px;
+    }
+
+    .filter-section,
+    .introduction {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .animal-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
