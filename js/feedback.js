@@ -1,4 +1,18 @@
+import "./supabase.js";
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    console.log("🔥 FEEDBACK.JS ĐÃ CHẠY");
+
+    // =========================
+    // KIỂM TRA SUPABASE
+    // =========================
+
+    console.log(
+        "Supabase client:",
+        window.supabaseClient
+    );
+
 
     // =========================
     // MENU
@@ -37,16 +51,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     if (!form || !message) {
+
+        console.error(
+            "❌ Không tìm thấy feedbackForm hoặc feedbackMessage"
+        );
+
         return;
+
     }
 
 
+    // =========================
+    // SUBMIT
+    // =========================
+
     form.addEventListener(
         "submit",
-        (event) => {
+        async (event) => {
 
             event.preventDefault();
 
+
+            console.log("🔥 ĐANG GỬI FEEDBACK");
+
+
+            // =========================
+            // KIỂM TRA SUPABASE
+            // =========================
+
+            if (!window.supabaseClient) {
+
+                console.error(
+                    "❌ Supabase client chưa tồn tại"
+                );
+
+                message.className =
+                    "feedback-message error";
+
+                message.textContent =
+                    "Không thể kết nối cơ sở dữ liệu.";
+
+                return;
+
+            }
+
+
+            // =========================
+            // LẤY DỮ LIỆU FORM
+            // =========================
 
             const name =
                 document
@@ -75,13 +127,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     .trim();
 
 
+            console.log(
+                "📦 DỮ LIỆU CHUẨN BỊ GỬI:",
+                {
+                    name,
+                    email,
+                    category,
+                    message: content
+                }
+            );
+
+
             // =========================
             // KIỂM TRA
             // =========================
 
             if (
-                !name ||
-                !category ||
+                !name ||!category ||
                 !content
             ) {
 
@@ -97,66 +159,93 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             // =========================
-            // TẠO FEEDBACK
+            // GỬI SUPABASE
             // =========================
 
-            const feedback = {
+            try {
 
-                name: name,
-
-                email: email,
-
-                category: category,
-
-                message: content,
-
-                date:
-                    new Date()
-                        .toISOString()
-
-            };
+                const { data, error } =
+                    await window.supabaseClient
+                        .from("feedback")
+                        .insert([
+                            {
+                                name: name,
+                                email: email || null,
+                                type: category,
+                                message: content
+                            }
+                        ])
 
 
-            // =========================
-            // LƯU LOCAL STORAGE
-            // =========================
-
-            const oldData =
-                localStorage.getItem(
-                    "animalPediaFeedback"
+                console.log(
+                    "📥 KẾT QUẢ SUPABASE:",
+                    {
+                        data,
+                        error
+                    }
                 );
 
 
-            const feedbacks =
-                oldData
-                    ? JSON.parse(oldData)
-                    : [];
+                // =========================
+                // NẾU LỖI
+                // =========================
+
+                if (error) {
+
+                    console.error(
+                        "❌ LỖI SUPABASE:",
+                        error
+                    );
+
+                    message.className =
+                        "feedback-message error";
+
+                    message.textContent =
+                        "Không thể gửi góp ý. Vui lòng thử lại.";
+
+                    return;
+
+                }
 
 
-            feedbacks.push(feedback);
+                // =========================
+                // THÀNH CÔNG
+                // =========================
+
+                console.log(
+                    "✅ GỬI FEEDBACK THÀNH CÔNG"
+                );
 
 
-            localStorage.setItem(
-                "animalPediaFeedback",
-                JSON.stringify(feedbacks)
-            );
+                message.className =
+                    "feedback-message success";
+
+                message.textContent =
+                    "Cảm ơn bạn! Góp ý của bạn đã được ghi nhận.";
 
 
-            // =========================
-            // THÔNG BÁO
-            // =========================
+                // =========================
+                // XÓA FORM
+                // =========================
 
-            message.className ="feedback-message success";
-
-            message.textContent =
-                "Cảm ơn bạn! Góp ý của bạn đã được ghi nhận.";
+                form.reset();
 
 
-            // =========================
-            // XÓA FORM
-            // =========================
+            } catch (error) {
 
-            form.reset();
+                console.error(
+                    "❌ LỖI KẾT NỐI SUPABASE:",
+                    error
+                );
+
+
+                message.className =
+                    "feedback-message error";
+
+                message.textContent =
+                    "Không thể gửi góp ý. Vui lòng thử lại.";
+
+            }
 
         }
     );
