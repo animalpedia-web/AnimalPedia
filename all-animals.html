@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tất cả động vật - AnimalPedia</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eefafa;
+            color: #164b4b;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            background: #d9f5f3;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 38px;
+        }
+
+        header p {
+            margin: 0;
+            color: #567;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .top-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        #search {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        #count {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .animals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .animal-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.25s;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+        }
+
+        .animal-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+            background: #ddd;
+        }
+
+        .animal-info {
+            padding: 16px;
+        }
+
+        .animal-name {
+            margin: 0 0 7px;
+            font-size: 20px;
+        }
+
+        .animal-type {
+            color: #168c86;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .animal-slug {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        #empty {
+            display: none;
+            text-align: center;
+            padding: 50px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .animals-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .animal-card img {
+                height: 140px;
+            }
+
+            .animal-info {
+                padding: 12px;
+            }
+
+            .animal-name {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🦁 Tất cả động vật</h1>
+    <p>Danh sách toàn bộ các loài hiện có trên AnimalPedia</p>
+</header>
+
+<main class="container">
+
+    <div class="top-bar">
+
+
+        <div id="count">
+            Đang tải...
+        </div>
+
+    </div>
+
+    <div
+        class="animals-grid"
+        id="animalsGrid"
+    ></div>
+
+    <div id="empty">
+        Không tìm thấy động vật nào.
+    </div>
+
+</main>
+
+<script type="module">
+
+    import animalsData from './data/animals.js';
+
+    const grid = document.getElementById("animalsGrid");
+    const search = document.getElementById("search");
+    const count = document.getElementById("count");
+    const empty = document.getElementById("empty");
+
+    function renderAnimals(list) {
+
+        grid.innerHTML = "";
+
+        count.textContent =
+            ` ${list.length} loài`;
+
+        if (list.length === 0) {
+
+            empty.style.display = "block";
+
+            return;
+        }
+
+        empty.style.display = "none";
+
+        list.forEach(animal => {
+
+            const card = document.createElement("a");
+
+            card.className = "animal-card";
+
+            card.href =
+                `animal.html?slug=${encodeURIComponent(animal.slug)}`;
+
+            card.innerHTML = `
+                <img
+                    src="${animal.image}"
+                    alt="${animal.name}"
+                    loading="lazy"
+                    onerror="
+                        this.onerror=null;
+                        this.src='images/placeholder.svg';
+                    "
+                >
+
+                <div class="animal-info">
+
+                    <h2 class="animal-name">
+                        ${animal.name}
+                    </h2>
+
+                    <div class="animal-type">
+                        ${animal.type || "Chưa phân loại"}
+                    </div>
+
+                    <div class="animal-slug">
+                        ${animal.slug}
+                    </div>
+
+                </div>
+            `;
+
+            grid.appendChild(card);
+
+        });
+    }
+
+
+    // HIỂN THỊ TOÀN BỘ
+    renderAnimals(animalsData);
+
+
+    // TÌM KIẾM
+    search.addEventListener("input", () => {
+
+        const keyword =
+            search.value
+                .trim()
+                .toLowerCase();
+
+        const filtered =
+            animalsData.filter(animal => {
+
+                const name =
+                    (animal.name || "").toLowerCase();
+
+                const slug =
+                    (animal.slug || "").toLowerCase();
+
+                const type =
+                (animal.type || "").toLowerCase();
+
+                return (
+                    name.includes(keyword) ||
+                    slug.includes(keyword) ||
+                    type.includes(keyword)
+                );
+
+            });
+
+        renderAnimals(filtered);
+
+    });
+
+</script>
+
+</body>
+</html>
