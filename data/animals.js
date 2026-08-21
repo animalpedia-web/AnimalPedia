@@ -1522,7 +1522,7 @@
         "statusName": "Đã tuyệt chủng",
         "intro": "Cò mỏ thon là một loài chim di cư cỡ trung bình, nổi tiếng là loài chim di cư đầu tiên trên thế giới bị tuyên bố tuyệt chủng trong thời hiện đại [1].",
         "habitat": "Chúng thường sinh sống tại các vùng đất ngập nước, đầm lầy than bùn để sinh sản và các đầm lầy nước mặn, bãi bồi ven biển khi di cư.",
-        "feeding": "Chúng dùng chiếc mỏ dài, cong và thon đặc trưng để sục sọ xuống bùn hoặc đất mềm nhằm tìm kiếm côn trùng, giun và động vật nhỏ.",
+        "feeding": "Chúng dùng chiếc mỏ dài, cong và thon đặc trưng để sục mỏ xuống bùn hoặc đất mềm nhằm tìm kiếm côn trùng, giun và động vật nhỏ.",
         "distributionDetail": "Trước đây chúng sinh sản ở vùng Siberia (Nga) và di cư qua các nước Nam Âu, Trung Đông để trú đông tại Bắc Phi (chủ yếu là Ma-rốc). Loài này đã chính thức bị IUCN tuyên bố tuyệt chủng vào tháng 10 năm 2025 sau nhiều thập kỷ không tìm thấy dấu vết [1]."
     },
     {

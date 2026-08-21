@@ -1,23 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Trang chủ -->
   <url>
-    <loc>https://vercel.app</loc>
+    <loc>https://animal-pedia.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
-  <!-- Trang loài chim -->
+
+  <!-- Sách đỏ -->
   <url>
-    <loc>https://vercel.appbirds.html</loc>
+    <loc>https://animal-pedia.vercel.app/red-book.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- Trang động vật lưỡng cư -->
+
+  <!-- Nguy cơ tuyệt chủng -->
   <url>
-    <loc>https://vercel.appamphibians.html</loc>
+    <loc>https://animal-pedia.vercel.app/endangered.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- Trang động vật -->
+
+  <!-- Mới xuất hiện -->
   <url>
-    <loc>https://vercel.appanimal.html</loc>
+    <loc>https://animal-pedia.vercel.app/new.html</loc>
     <priority>0.8</priority>
   </url>
+
+  <!-- Đã tuyệt chủng -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/extinct.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Góp ý -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/feedback.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Thông tin -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/info.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <!-- Các con vật có trong trang web -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/all-animals.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Động vật có vú -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/mammals.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Chim -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/birds.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Bò sát -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/reptiles.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cá -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/fish.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Côn trùng -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/insects.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lưỡng cư -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/amphibians.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Động vật không xương sống -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/invertebrates.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Giáp xác -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/crustacean.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang chi tiết động vật -->
+  <url>
+    <loc>https://animal-pedia.vercel.app/animal.html</loc>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
