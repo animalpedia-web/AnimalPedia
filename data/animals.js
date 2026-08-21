@@ -1505,5 +1505,45 @@
     "habitat": "Chúng sống trong các khu rừng mưa nhiệt đới rậm rạp, nơi có nhiều cây đổ và thảm thực vật mục nát.",
     "feeding": "Khi trưởng thành, chúng bò dọc các thân cây để ăn các loại quả chín rụng hoặc hút nhựa cây ngọt.",
     "distributionDetail": "Loài bọ này phân bố rộng rải tại các cánh rừng nhiệt đới từ miền nam Mexico kéo dài xuống đến Bolivia."
-  }   
+  },
+  {
+        "slug": "slender-billed-curlew",
+        "name": "Cò mỏ thon",
+        "scientificName": "Numenius tenuirostris",
+        "type": "Chim",
+        "image": "images/slender_billed_curlew.jpg",
+        "weight": "0.35 - 0.5 kg",
+        "length": "36 - 41 cm",
+        "lifespan": "10 - 15 năm",
+        "speed": "50 - 70 km/h",
+        "diet": "Côn trùng, giun đất, ốc sên, động vật thân mềm nhỏ",
+        "distribution": "Châu Âu, Bắc Phi, Trung Á",
+        "status": "EX",
+        "statusName": "Đã tuyệt chủng",
+        "intro": "Cò mỏ thon là một loài chim di cư cỡ trung bình, nổi tiếng là loài chim di cư đầu tiên trên thế giới bị tuyên bố tuyệt chủng trong thời hiện đại [1].",
+        "habitat": "Chúng thường sinh sống tại các vùng đất ngập nước, đầm lầy than bùn để sinh sản và các đầm lầy nước mặn, bãi bồi ven biển khi di cư.",
+        "feeding": "Chúng dùng chiếc mỏ dài, cong và thon đặc trưng để sục sọ xuống bùn hoặc đất mềm nhằm tìm kiếm côn trùng, giun và động vật nhỏ.",
+        "distributionDetail": "Trước đây chúng sinh sản ở vùng Siberia (Nga) và di cư qua các nước Nam Âu, Trung Đông để trú đông tại Bắc Phi (chủ yếu là Ma-rốc). Loài này đã chính thức bị IUCN tuyên bố tuyệt chủng vào tháng 10 năm 2025 sau nhiều thập kỷ không tìm thấy dấu vết [1]."
+    },
+    {
+        "slug": "west-australian-lanternshark",
+        "name": "Cá mập đèn lồng Tây Úc",
+        "scientificName": "Etmopterus westraliensis",
+        "type": "Cá",
+        "image": "images/west_australian_lanternshark.jpg",
+        "weight": "0.2 - 0.4 kg",
+        "length": "25 - 35 cm",
+        "lifespan": "Chưa có dữ liệu",
+        "speed": "Chậm",
+        "diet": "Cá nhỏ, tôm biển sâu, mực nhỏ",
+        "distribution": "Tây Úc",
+        "status": "NE",
+        "statusName": "Chưa được đánh giá",
+        "discoveryYear": 2025,
+        "discoveryStatus": "Loài mới được mô tả năm 2025",
+        "intro": "Cá mập đèn lồng Tây Úc là một loài cá mập sinh sống dưới biển sâu, mới được các nhà khoa học phát hiện và mô tả chính thức vào năm 2025.",
+        "habitat": "Chúng sống ở các vùng biển khơi sâu thẳm, chủ yếu ở độ sâu khoảng 610 mét dưới đáy đại dương tại vùng biển Tây Úc.",
+        "feeding": "Chúng là loài săn mồi cơ hội ở biển sâu, sử dụng thị giác nhạy bén để săn các loài cá nhỏ, động vật giáp xác và mực.",
+        "distributionDetail": "Loài này là động vật đặc hữu của vùng biển phía Tây nước Úc. Do mới được phát hiện bởi tổ chức CSIRO vào nửa cuối năm 2025, các dữ liệu về vòng đời và quần thể của chúng hiện vẫn đang được nghiên cứu thêm."
+    }   
 ];  export default animals;
