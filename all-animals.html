@@ -188,6 +188,16 @@
     const count = document.getElementById("count");
     const empty = document.getElementById("empty");
 
+
+    // SẮP XẾP ĐỘNG VẬT THEO BẢNG CHỮ CÁI A → Z
+    const sortedAnimals = [...animalsData].sort((a, b) => {
+        return (a.name || "").localeCompare(
+            (b.name || ""),
+            "vi"
+        );
+    });
+
+
     function renderAnimals(list) {
 
         grid.innerHTML = "";
@@ -248,7 +258,7 @@
 
 
     // HIỂN THỊ TOÀN BỘ
-    renderAnimals(animalsData);
+    renderAnimals(sortedAnimals);
 
 
     // TÌM KIẾM
@@ -260,7 +270,7 @@
                 .toLowerCase();
 
         const filtered =
-            animalsData.filter(animal => {
+            sortedAnimals.filter(animal => {
 
                 const name =
                     (animal.name || "").toLowerCase();
