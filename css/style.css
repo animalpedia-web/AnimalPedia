@@ -13,12 +13,12 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 80px auto 40px;
+    margin: 40px auto 40px;
 }
 
 .hero {
     text-align: center;
-    padding: 40px 20px 24px;
+    padding: 10px 20px 24px;
 }
 
 .eyebrow {
@@ -544,5 +544,17 @@ h1 {
         min-height: unset;   /* Bỏ thiết lập chiều cao cũ gây lỗi */
         object-fit: cover;   /* Giữ nguyên tỷ lệ, cắt bớt phần thừa tự động */
         object-position: center; /* Căn giữa ảnh */
+    }
+}
+/* Khi màn hình nhỏ hơn 768px (Điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px; /* Đẩy sát lên trên hơn nữa trên điện thoại */
+    }
+    .hero {
+        padding-top: 0px; /* Xóa bỏ hoàn toàn khoảng trống thừa phía trên chữ */
+    }
+    h1 {
+        font-size: 2rem; /* Thu nhỏ chữ Bách Khoa Động Vật một chút cho vừa màn hình điện thoại */
     }
 }
