@@ -523,3 +523,20 @@ h1 {
     flex-direction: column;
     gap: 6px;
 }
+/* --- SỬA LỖI MÓP ẢNH TRÊN ĐIỆN THOẠI --- */
+@media (max-width: 768px) {
+    /* Chuyển Grid thành 1 cột đứng trên điện thoại */
+    .animal-detail-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    /* Giúp ảnh tự co giãn chuẩn tỉ lệ không bị kéo giãn */
+    .animal-detail-grid img {
+        width: 100%;
+        height: 280px;       /* Chiều cao vừa vặn cho màn hình điện thoại */
+        min-height: unset;   /* Bỏ thiết lập chiều cao cũ gây lỗi */
+        object-fit: cover;   /* Giữ nguyên tỷ lệ, cắt bớt phần thừa tự động */
+        object-position: center; /* Căn giữa ảnh */
+    }
+}
