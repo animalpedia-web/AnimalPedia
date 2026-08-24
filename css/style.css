@@ -561,7 +561,7 @@ h1 {
 @media (max-width: 768px) {
     .container {
         /* Đẩy sát nội dung lên trên cùng trên điện thoại */
-        margin-top: 0px !important; 
+        margin-top: 24px !important; 
     }
     .hero {
         /* Xóa bỏ hoàn toàn khoảng trống phía trên chữ ANIMALPEDIA */
