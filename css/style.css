@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #c3e9f3;
     color: #09303d;
-    padding: 24px;
+    padding: 0 16px 24px;
 }
 
 .container {
@@ -556,5 +556,19 @@ h1 {
     }
     h1 {
         font-size: 2rem; /* Thu nhỏ chữ Bách Khoa Động Vật một chút cho vừa màn hình điện thoại */
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        /* Đẩy sát nội dung lên trên cùng trên điện thoại */
+        margin-top: 0px !important; 
+    }
+    .hero {
+        /* Xóa bỏ hoàn toàn khoảng trống phía trên chữ ANIMALPEDIA */
+        padding-top: 0px !important; 
+    }
+    .eyebrow {
+        /* Xóa lề mặc định nếu có của chữ ANIMALPEDIA */
+        margin-top: 0px !important; 
     }
 }
