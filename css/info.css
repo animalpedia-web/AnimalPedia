@@ -872,3 +872,10 @@ body {
     }
 
 }
+@media (max-width: 768px) {
+    /* Các code cũ của bạn giữ nguyên ở đây... */
+
+    .side-menu {
+        padding-top: 45px !important; /* Đẩy chữ Trang chủ lên sát hơn trên điện thoại */
+    }
+}
