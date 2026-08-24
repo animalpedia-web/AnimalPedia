@@ -559,6 +559,10 @@ h1 {
     }
 }
 @media (max-width: 768px) {
+    body {
+        /* Giảm khoảng cách padding dưới cùng để nội dung sát hơn với chân trang trên điện thoại */
+        padding-bottom: 24px !important; 
+    }
     .container {
         /* Đẩy sát nội dung lên trên cùng trên điện thoại */
         margin-top: 24px !important; 
