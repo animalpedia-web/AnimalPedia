@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimalPedia - Chim</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site-theme.css">
     <style>
         body { margin: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #eef6f3, #f8fbff); color: #09303d; }
         .category-page { max-width: 1000px; margin: 40px auto; padding: 24px; }
@@ -19,6 +20,10 @@
     </style>
 </head>
 <body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu"><span></span><span></span><span></span></button>
+    <nav class="side-menu" id="sideMenu">
+        <a href="index.html">Trang chủ</a><a href="red-book.html">Sách đỏ</a><a href="endangered.html">Nguy cơ tuyệt chủng</a><a href="new.html">Mới xuất hiện</a><a href="extinct.html">Đã tuyệt chủng</a><a href="feedback.html">Góp ý</a><a href="info.html">Thông tin</a><a href="all-animals.html">Các con vật có trong trang web</a>
+    </nav>
     <main class="category-page">
         <a class="back-link" href="index.html">← Quay về trang chủ</a>
         <section class="hero">
@@ -27,5 +32,6 @@
         <section class="animal-grid" id="animalGrid"></section>
     </main>
     <script src="js/category-page.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

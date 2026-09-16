@@ -484,6 +484,16 @@
         "scientificName":  "Setonix brachyurus",
         "type":  "Động vật có vú",
         "image":  "images/quokka.jpg",
+        "gallery": [
+          "images/quokka-1.jpg",
+          "images/quokka-2.jpg",
+          "images/quokka.jpg"
+        ],
+        "videos": [
+          {
+            "url": "https://www.pexels.com/download/video/5968029/"
+          }
+        ],
         "weight":  "2.5 - 5 kg",
         "length":  "40 - 54 cm",
         "lifespan":  "10 năm",
@@ -640,7 +650,16 @@
         "scientificName":  "Vombatidae ursinus",
         "type":  "Động vật có vú",
         "image":  "images/wombat.jpg",
-        "weight":  "20 - 40 kg",
+        "gallery": [
+          "images/wombat-1.jpg",
+          "images/wombat-2.jpg",
+          "images/wombat.jpg"
+        ],
+        "videos": [
+          {
+            "url": "https://www.pexels.com/vi-vn/download/video/20616586/"
+          }
+        ],
         "length":  "70 - 120 cm",
         "lifespan":  "15 năm",
         "speed":  "25 km/h",
@@ -1911,7 +1930,15 @@
     "feeding": "Chưa có đủ dữ liệu nghiên cứu để xác định chính xác thành phần thức ăn của Pachydactylus ovahimba. Giống nhiều loài tắc kè ngón dày khác, chúng có khả năng săn các động vật không xương sống nhỏ.",
     "distributionDetail": "Pachydactylus ovahimba hiện được biết đến tại tỉnh Namibe ở phía tây nam Angola. Địa điểm điển hình của loài nằm gần Otchifengo, ở độ cao khoảng 584 mét. Loài được chính thức mô tả năm 2025 sau khi các nghiên cứu di truyền và hình thái cho thấy quần thể này khác biệt rõ ràng với Pachydactylus caraculicus."
   }   
-];  export default animals;
+];
+
+const animalsWithMedia = animals.map((animal) => ({
+  ...animal,
+  gallery: animal.gallery?.length ? animal.gallery : [animal.image],
+  videos: animal.videos || (animal.video ? [animal.video] : []),
+}));
+
+export default animalsWithMedia;
 ;
   const animalNames = animals.map(animal => animal.name);
   console.log(animalNames.join("\n"));

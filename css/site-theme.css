@@ -1,0 +1,120 @@
+/* Shared visual language from the homepage. Content and image geometry stay page-specific. */
+:root {
+    --site-ink: #09303d;
+    --site-teal: #0f766e;
+    --site-cyan: #0891b2;
+    --site-surface: #ffffff;
+    --site-soft: #f8fafc;
+    --site-border: rgba(15, 77, 68, 0.08);
+    --site-shadow: 0 18px 40px rgba(15, 63, 67, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background: #c3e9f3 !important;
+    color: var(--site-ink);
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+.menu-toggle,
+.search-toggle {
+    background: var(--site-cyan) !important;
+    box-shadow: 0 10px 22px rgba(8, 145, 178, 0.25) !important;
+}
+
+.side-menu {
+    background: #0f172a !important;
+    padding: 80px 20px 40px !important;
+    gap: 10px !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.side-menu a,
+.side-menu strong {
+    color: #ffffff !important;
+    border-radius: 10px !important;
+}
+
+.side-menu a:hover,
+.side-menu a.active,
+.side-menu a.current {
+    background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.menu-group strong {
+    color: #67e8f9 !important;
+}
+
+.page,
+.animal-page,
+.feedback-container,
+.introduction,
+.overview-card,
+.animal-card,
+.stat-card,
+.animals-section,
+.category-page .hero,
+#count {
+    background: var(--site-surface) !important;
+    border-color: var(--site-border) !important;
+    box-shadow: var(--site-shadow) !important;
+}
+
+h1,
+h2,
+h3,
+.page h2,
+.animal-section h2,
+.animal-facts h2,
+.animal-card h3 {
+    color: var(--site-teal);
+}
+
+input,
+textarea,
+select,
+#search,
+.search-area input,
+.search-box input {
+    border-color: #cbd5e1 !important;
+    background: #ffffff !important;
+    color: var(--site-ink);
+}
+
+button,
+.hero-button,
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--site-cyan);
+}
+
+.hero-button,
+.filter-btn.active,
+.filter-btn:hover {
+    color: #ffffff;
+}
+
+.category-page {
+    margin-top: 40px;
+}
+
+.category-page .back-link {
+    color: var(--site-teal) !important;
+}
+
+@media (max-width: 768px) {
+    .side-menu {
+        padding-top: 45px !important;
+    }
+}

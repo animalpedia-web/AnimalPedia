@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/site-theme.css">
 </head>
 <body>
     <div class="search-panel">
@@ -56,6 +57,7 @@
         <div class="animal-detail-grid">
             <div>
                 <img src="images/placeholder.svg" alt="" id="animalImage">
+                <div class="animal-gallery" id="animalGallery" aria-label="Thư viện ảnh"></div>
             </div>
             <aside class="animal-facts">
                 <h2>Thông tin cơ bản</h2>
@@ -92,9 +94,14 @@
             <h2>Phân bố</h2>
             <p id="animalDistributionDetail"></p>
         </section>
+
+        <section class="animal-section animal-videos" id="animalVideosSection" hidden>
+            <h2>Video</h2>
+            <div class="video-grid" id="animalVideos"></div>
+        </section>
     </main>
 
     <script type="module" src="js/script.js"></script>
-    <script src="js/animal.js"></script>
+    <script type="module" src="js/animal.js"></script>
 </body>
 </html>
