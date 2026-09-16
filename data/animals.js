@@ -491,7 +491,7 @@
         ],
         "videos": [
           {
-            "url": "https://www.pexels.com/download/video/5968029/"
+            "url": "https://videos.pexels.com/video-files/5968029/5968029-hd_1920_1080_30fps.mp4"
           }
         ],
         "weight":  "2.5 - 5 kg",
@@ -657,7 +657,7 @@
         ],
         "videos": [
           {
-            "url": "https://www.pexels.com/vi-vn/download/video/20616586/"
+            "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/fe/Wombat_eating_in_the_snow_at_Mount_Buller_Alpine_Resort%2C_Victoria%2C_Australia.webm/Wombat_eating_in_the_snow_at_Mount_Buller_Alpine_Resort%2C_Victoria%2C_Australia.webm.1080p.vp9.webm"
           }
         ],
         "length":  "70 - 120 cm",
