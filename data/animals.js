@@ -1929,7 +1929,38 @@
     "habitat": "Loài được biết đến từ các khu vực đá và môi trường khô cằn ở tỉnh Namibe, Angola. Môi trường sống của chúng thuộc vùng Kaokoveld, một khu vực có địa hình đá và khí hậu khô hạn.",
     "feeding": "Chưa có đủ dữ liệu nghiên cứu để xác định chính xác thành phần thức ăn của Pachydactylus ovahimba. Giống nhiều loài tắc kè ngón dày khác, chúng có khả năng săn các động vật không xương sống nhỏ.",
     "distributionDetail": "Pachydactylus ovahimba hiện được biết đến tại tỉnh Namibe ở phía tây nam Angola. Địa điểm điển hình của loài nằm gần Otchifengo, ở độ cao khoảng 584 mét. Loài được chính thức mô tả năm 2025 sau khi các nghiên cứu di truyền và hình thái cho thấy quần thể này khác biệt rõ ràng với Pachydactylus caraculicus."
-  }   
+  },  
+  {
+  "slug": "red-lipped-batfish",
+  "name": "Cá dơi môi đỏ",
+  "scientificName": "Ogcocephalus darwini",
+  "type": "Cá",
+  "image": "images/red_lipped_batfish.jpg",
+  "gallery": [
+          "images/red_lipped_batfish-1.jpg",
+          "images/red_lipped_batfish-2.jpg",
+          "images/red_lipped_batfish.jpg"
+        ],
+        "videos": [
+          {
+            "url": "https://www.youtube.com/embed/z4KRa-ZTRNk",
+            "title": "Cá dơi môi đỏ ở quần đảo Galápagos"
+          }
+        ],
+  "weight": "0.3 - 1.0 kg",
+  "length": "25 - 40 cm",
+  "lifespan": "Khoảng 12 năm",
+  "speed": "Chậm",
+  "diet": "Cá nhỏ, giáp xác, tôm, cua, mực nhỏ, nhuyễn thể",
+  "distribution": "Quần đảo Galápagos, Ecuador và Peru",
+  "status": "LC",
+  "statusName": "Ít quan tâm",
+  "intro": "Cá dơi môi đỏ là một loài cá biển đặc hữu có ngoại hình vô cùng độc đáo, nổi tiếng với đôi môi đỏ rực rỡ như tô son.",
+  "habitat": "Chúng sinh sống chủ yếu ở tầng đáy biển, trên các rạn san hô hoặc vùng đáy cát và sỏi ở độ sâu từ 3 đến 76 mét (đôi khi lên đến 120 mét).",
+  "feeding": "Là một loài cá vây chân, chúng sử dụng một chiếc 'cần câu' đặc biệt trên đầu để phát mùi hoặc chuyển động dụ dỗ con mồi đến gần trước khi đớp gọn.",
+  "distributionDetail": "Loài này là động vật đặc hữu của vùng biển nhiệt đới Đông Thái Bình Dương, tập trung nhiều nhất xung quanh quần đảo Galápagos của Ecuador. Chúng không có khả năng bơi lội tốt mà chủ yếu sử dụng các vây ngực và vây bụng biến đổi để 'đi bộ' dưới đáy đại dương."
+}
+ 
 ];
 
 const animalsWithMedia = animals.map((animal) => ({
